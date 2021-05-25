@@ -1,59 +1,144 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Pinot Gogo Website
 
-Welcome USER_NAME,
+[View the live project here.]()
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+This is a presentation website for assessment by the Code Institute. This focus of this assessment is interactive frontend development. The site should respond to users actions, allowing users to actively engage with data, alter the way data is displayed to achieve their goals. 
 
-## Gitpod Reminders
+# User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User stories
 
-`python3 -m http.server`
+### First Time Visitor Goals
+* As a First Time Visitor, I want to find out more about Pinot Gogo. 
+* As a First Time Visitor, I want to find a wine that would suit me. 
+* As a First Time Visitor, I want to see what wine tours are available.
 
-A blue button should appear to click: _Make Public_,
+### Returning Visitor Goals
+* As a Returning Visitor, I want to find contact information to enquire about by my wine tour. 
+* As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
+* As a Returning Visitor, I want to see what wine tours are available..
 
-Another blue button should appear to click: _Open Browser_.
+### Frequent User Goals
+* As a Frequent User, I want to read the blog to see if there are any new wine recommendations. 
+* As a Frequent User, I want to find Pinot Gogo’s social media pages to follow. 
+* As a Frequent User, I want to find contact information to enquire about by my wine tour. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Design
 
-A blue button should appear to click: _Make Public_,
+## Colour Scheme
 
-Another blue button should appear to click: _Open Browser_.
+## Typography
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Imagery
 
-To log into the Heroku toolbelt CLI:
+## Wireframes
+Home Page Wireframe - [View]("assets/images/homepage-wireframe.png")
+Mobile Wireframe - [View]("assets/images/Mobile_homepage.png")
+Quiz Wireframe - [View]("assets/images/Quiz-desktop-wireframe.png")
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Features
+* Responsive on all device sizes
+* An interactive quiz 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+## Technologies Used
 
-## Updates Since The Instructional Video
+**Languages Used**
+* HTML5
+* CSS
+* Javascript
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Frameworks, Libraries & Programs Used
+* [Bootstrap]() was used to assist with the responsiveness and styling of the website.
+* [Google Fonts]() used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+* [Font Awesome]() used on all pages throughout the website to add icons for aesthetic and UX purposes.
+* [jQuery]() came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+* [Gitpod]() was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [GitHub]() is used to store the projects code after being pushed from Git.
+* [Canva]() used to create the logo, resizing images and editing photos for the website.
+* [Balsamiq]() used to create the wireframes during the design process.
+* [Vue]() used for the interactive quiz. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+# Testing
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+W3C Markup Validator - [Results]()
+W3C CSS Validator - [Results]()
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Testing User Stories from User Experience (UX) Section
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### First Time Visitor Goals
+* As a First Time Visitor, I want to find out more about Pinot Gogo. 
+* As a First Time Visitor, I want to find a wine that would suit me. 
+* As a First Time Visitor, I want to see what wine tours are available.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Returning Visitor Goals
+* As a Returning Visitor, I want to find contact information to enquire about by my wine tour. 
+* As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
+* As a Returning Visitor, I want to see what wine tours are available..
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Frequent User Goals
+* As a Frequent User, I want to read the blog to see if there are any new wine recommendations. 
+* As a Frequent User, I want to find Pinot Gogo’s social media pages to follow. 
+* As a Frequent User, I want to find contact information to enquire about by my wine tour. 
+Further Testing
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+* The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+* A large amount of testing was done to ensure that all pages were linking correctly.
+* Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Known Bugs
+ 
+ 
+# Deployment
 
----
+### GitHub Pages
+The project was deployed to GitHub Pages using the following steps...
+* Log in to GitHub and locate the [GitHub Repository]()
+* At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+--Alternatively Click Here for a GIF demonstrating the process starting from Step 2.
+* Scroll down the Settings page until you locate the "GitHub Pages" Section.
+* Under "Source", click the dropdown called "None" and select "Master Branch".
+* The page will automatically refresh.
+* Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
 
-Happy coding!
+### Forking the GitHub Repository
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+* Log in to GitHub and locate the [GitHub Repository]()
+* At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+* You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+* Log in to GitHub and locate the [GitHub Repository]()
+* Under the repository name, click "Clone or download".
+* To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+* Open Git Bash
+* Change the current working directory to the location where you want the cloned directory to be made.
+* Type git clone, and then paste the URL you copied in Step 3.
+$ git clone https://github.com/mishsmelle/pinot-gogo
+
+* Press Enter. Your local clone will be created.
+$ git clone https://github.com/mishsmelle/pinot-gogo
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+## Credits
+
+### Code
+* The full-screen hero image code came from [this StackOverflow post]()
+
+## Content
+All content was written by myself, MichelleO'Connor. 
+
+## Media
+All Images were sourced from [Pexels.com](https://www.pexels.com/)
+
+## Acknowledgements
+My Mentor for continuous helpful feedback.
+Tutor support at Code Institute for their support.
