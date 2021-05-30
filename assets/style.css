@@ -94,6 +94,88 @@ h1, h2 {
   }
   /* End of Hero Image styling*/
 
+/*quiz styling*/
+.quiz-container {
+    text-align: center;
+    padding: 3rem;
+    text-shadow: 0 1px #00000010;
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    background: #E6D0D0;
+    min-height: 100vh;
+  }
+  .title {
+    margin-left: 50%;
+    text-align: center;
+    margin-top: 30%;
+    margin-bottom: 3rem;
+    color: #000000;
+    font-family: 'Great Vibes', cursive !important;
+    font-weight: 400;
+    font-size: 3.5rem;
+  }
+  .question {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
+  #app {
+      min-height: 50vh;
+    text-align: center;
+    margin-right: 20%;
+      background: #fff;
+  }
+  
+  #app > .row {
+      background: #fff;
+    margin-left: 25%;
+  }
+  
+  h1 {
+      margin-bottom: 20px;
+  }
+  
+  [v-cloak] {
+    display: none;
+  }
+  button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-weight: 300;
+    color: black;
+    outline: none;
+    transform: scale(0.98);
+    transition: all 0.2s;
+  }
+  button.next {
+    background: #A47F7F;
+  }
+  
+  button.previous {
+    background: #434343;
+  }
+  
+  button.restart {
+    background: #ffffff;
+    color: #00000050;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.4s;
+  }
+  button.restart:hover {
+    color: #00000098;
+  }
+  button:hover,
+  button:focus {
+    transform: scale(1);
+    font-weight: 500;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  }
+    /*end of quiz styling*/
+
     /*--------------------- Start of footer */
 footer{
     background-color: #808080;
