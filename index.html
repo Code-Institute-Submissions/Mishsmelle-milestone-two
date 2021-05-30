@@ -9,6 +9,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   </head>
   <body>
     <header id="header-style">
@@ -46,6 +50,43 @@
     </div>
   </div>
   <!--End of Hero Image-->
+  !--Image Row..code credit: https://www.w3schools.com/howto/howto_css_image_overlay.asp-->
+<section id="img-row">
+<h2>Most popular wine regions</h2>
+<p>Choose from one of our top three destinations</p>
+
+<div class="row">
+
+<div class="column">
+<div class="container">
+  <img src="assets/images/wine-tour-1.jpg" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Medoc</div>
+  </div>
+</div>
+</div>
+
+<div class="column">
+<div class="container">
+  <img src="assets/images/wine-tour-2.jpg" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Burgundy</div>
+  </div>
+</div>
+</div>
+
+<div class="column">
+  <div class="container">
+  <img src="assets/images/wine-tour-3.jpg" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Bordeaux</div>
+  </div>
+</div>
+</div>
+</div>
+  </section>
+<!--End of Image Row-->
+<br>
        <!--Start of Find Your Ideal Wine Quiz code credit: https://codepen.io/heatherduvall/pen/ggedwy -->
  <div id="app" v-cloak>
 
@@ -188,6 +229,7 @@
     </div>
 </footer>
             <!--End of Footer -->
-   
+            <script src="/assets/script.js"></script>
+     
 </body>
 </html>
