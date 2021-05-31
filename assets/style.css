@@ -235,6 +235,13 @@ h1, h2 {
   }
     /*end of quiz styling*/
 
+/* About Us styling */
+#aboutus-intro{
+  margin:  25% 20% 5% 20%;
+  }
+  /* End of About Us styling */
+    
+
     /*--------------------- Start of footer */
 footer{
     background-color: #808080;

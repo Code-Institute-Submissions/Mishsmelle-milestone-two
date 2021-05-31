@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -39,93 +39,175 @@ href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="styl
         </nav>
         </header>
 <!--End of Nav Bar -->
-        <!--Start of Footer -->
+
+<!--Hero Image section...code credit: https://www.w3schools.com/howto/howto_css_hero_image.asp-->
+ <div class="hero-image">
+  <img src="/assets/images/about-us-hero.png" class="heroimg">
+  <div class="hero-text">
+    <h1>About Us</h1>
+    <p>A Family owned and operated luxury wine tour company.</p>
+    <button><a href="contact-us.html">Get in touch</a></button>
+  </div>
+</div>
+
+<!--End of Hero Image-->
+<section id="aboutus-intro">
+  <div>
+    <p>Pinot Gogo is a Luxury Travel Specialist, operating since 2021 and offering exclusive Mercedes chauffeured tours in Medoc, Bordeaux, and Burgundy. We specialize in luxurious custom designed vacations, events and incentives related to food and wine.
+
+We are proud members of ASTA (American Society of Travel Agents), Slow Food, UNAV (Travel Agency Association in Spain), and the IACP (International Association of Culinary Professionals).</p>
+    </div>
+  </section> 
+
+        <section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Why Choose Us</h2>
+  <p>Click on the images to enlarge them.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/assets/images/about-us-1.png" target="_blank">
+          <img src="/assets/images/about-us-1.png" style="width:100%">
+          <div class="caption">
+            <p>Personally visited and hand selected suppliers including luxury hotels, wineries, private chefs, etc.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/assets/images/about-us-2.png" target="_blank">
+          <img src="/assets/images/about-us-2.png" style="width:100%">
+          <div class="caption">
+            <p>We are a licensed, insured and fully bonded tour operator and travel agency.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/assets/images/about-us-3.png" target="_blank">
+          <img src="/assets/images/about-us-3.png"  style="width:100%">
+          <div class="caption">
+            <p>VIP customer service
+during the entire tour process and the trip itself.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+        </section>
 
 
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
-        <footer>
-              <div class="container">
-                <div class="row">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6 col-md-4 col-lg-3">
-                        <ul class="address">
-                             <span>Get in touch</span>    
-                             <li>
-                                <p>Pinot Gogo,    
-                                  12 Grafton Street, Dublin 2. D02 T3K4</p>
-                              </li>
-                                   
-                              <li>
-                                <p>+01 677 4330</p>
-                              </li>
-                                   
-                              <li>
-                                <p><a href="mailto:info@pinotgogo.com">info@pinotgogo.com</a></p>
-                              </li>
-                         </ul>
-                    </div>
-                    
-                    <div class="col-xs-6 col-md-4 col-lg-3">
-                        <ul class="contact">
-                             <span>Find Out More</span>    
-                             <li>
-                                <a href="#">Home</a>
-                              </li>
-                                   
-                              <li>
-                                 <a href="#">About</a>
-                              </li>
-                                   
-                              <li>
-                                <a href="#">Blog</a>
-                              </li>
-                                   
-                              <li>
-                                 <a href="#">Gallery </a>
-                              </li>
-                                   
-                              <li>
-                                <a href="#">Contact</a>
-                             </li>
-                        </ul>
-                    </div>
-               
-                    <div class="col-xs-6 col-md-4 col-lg-3">
-                        <ul class="social">
-                           <span>Social</span>    
-                           <li>
-                                <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                           </li>
-                            
-                           <li>
-                                <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-                           </li>
+
+<!--Start of Footer -->
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
+<footer>
+      <div class="container">
+        <div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-md-4 col-lg-3">
+                <ul class="address">
+                     <span>Get in touch</span>    
+                     <li>
+                        <p>Pinot Gogo,    
+                          12 Grafton Street, Dublin 2. D02 T3K4</p>
+                      </li>
                            
-                           <li>
-                                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                           </li>
-                          <li>
-                                <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
-                           </li>
-                         </ul>
-                    </div>
-                                <div class="col-xs-6 col-md-4 col-lg-3">
-                        <ul class="social">
-                             <span>Stay Connected</span>            
-                              <li>
-                                <label for="fname">Name</label>
-            <input type="text" id="fname" name="name" placeholder="Your name..">
-                              </li>
-                                <li>
-                                <label for="fname">Email Address</label>
-            <input type="text" id="email" name="email" placeholder="Your email address..">
-                              </li>
-                    </div>
-               </div> 
+                      <li>
+                        <p>+01 677 4330</p>
+                      </li>
+                           
+                      <li>
+                        <p><a href="mailto:info@pinotgogo.com">info@pinotgogo.com</a></p>
+                      </li>
+                 </ul>
             </div>
-        </footer>
-                    <!--End of Footer -->
-                    <script src="/assets/script.js"></script>
-        </body>
-        </html>
+            
+            <div class="col-xs-6 col-md-4 col-lg-3">
+                <ul class="contact">
+                     <span>Find Out More</span>    
+                     <li>
+                        <a href="#">Home</a>
+                      </li>
+                           
+                      <li>
+                         <a href="#">About</a>
+                      </li>
+                           
+                      <li>
+                        <a href="#">Blog</a>
+                      </li>
+                           
+                      <li>
+                         <a href="#">Gallery </a>
+                      </li>
+                           
+                      <li>
+                        <a href="#">Contact</a>
+                     </li>
+                </ul>
+            </div>
+       
+            <div class="col-xs-6 col-md-4 col-lg-3">
+                <ul class="social">
+                   <span>Social</span>    
+                   <li>
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                   </li>
+                    
+                   <li>
+                        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                   </li>
+                   
+                   <li>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                   </li>
+                  <li>
+                        <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
+                   </li>
+                 </ul>
+            </div>
+                        <div class="col-xs-6 col-md-4 col-lg-3">
+                <ul class="social">
+                     <span>Stay Connected</span>            
+                      <li>
+                        <label for="fname">Name</label>
+    <input type="text" id="fname" name="name" placeholder="Your name..">
+                      </li>
+                        <li>
+                        <label for="fname">Email Address</label>
+    <input type="text" id="email" name="email" placeholder="Your email address..">
+                      </li>
+            </div>
+       </div> 
+    </div>
+</footer>
+<!--End of Footer -->
+
+     <script src="assets/script.js"></script>
+     
+</body>
+
+</html>
+ 
