@@ -39,25 +39,24 @@
         </nav>
         </header>
 <!--End of Nav Bar -->
-   <section id="explore">
-        <h1 class="section-heading">What To Do?</h1>
-        <div class="explore-container">
-            <div class="row">
-                <!-- buttons gets inserted here via map.js -->
-                <div id="button-row" class="col-12 col-lg-8 col-lg-offset-4 d-flex justify-content-center"></div>
-            </div>
-            <div class="row">
-                <!-- map gets rendered in here via map.js -->
-                <div class="col-12 col-lg-8 map-container">
-                    <div id="map"></div>
-                </div>
-                <!-- content gets inserted here via map.js -->
-                <div class="recommend-content-container col-12 d-lg-block col-lg-4">
-                    <div id="recommend-content"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+<!-- Start of Google Map-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+<script src="assets/google-maps.js"></script>
+</head>
+<body>
+<div id="map"></div>
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4C8pA5ivo0Pg8d-DxfkvAIg0tjodc55s&callback=initMap&libraries=&v=weekly"
+  async
+></script>
+
+<!--End of Google Map-->
         <!--Start of Footer -->
 
 
@@ -146,7 +145,4 @@
 </footer>
 </body>
 <!--End of Footer Section-->  
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4C8pA5ivo0Pg8d-DxfkvAIg0tjodc55s"></script>
-<script src="assets/maps.js"></script>
 </html>
