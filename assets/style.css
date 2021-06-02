@@ -235,17 +235,36 @@ box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 /*end of quiz styling*/
 
+/*Start of intro styling*/
+
+/* Create three equal columns that floats next to each other */
+.text-column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.text-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .text-column {
+    width: 100%;
+  }
+}
+
+/*End of intro styling*/
+
+
 /*Start of map styling */
 
        #map {
-        height: 100%;
-      }
-
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
+        height: 50%;
       }
 /*End of map styling */
 
