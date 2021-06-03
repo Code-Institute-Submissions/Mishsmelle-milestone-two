@@ -291,50 +291,22 @@ font-size: 25px;
 /* End of About Us styling */
 
 /*--Contact Us styling--------------------*/
-#contact h2 {
-  padding-bottom: 5px;
+label {
+padding: 10px;
 }
-
-#success {
-  display: none;
-  text-align: center;
-}
-
-#failed {
-  display: none;
-  text-align: center;
-}
-
-.form-container {
+#form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #c5c5c5;
-}
-
-form {
-  width: 70%;
-  text-align: center;
 }
 
 form input {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
 
-button {
-  background-color: #ff6600;
-  color: #fff;
-  border-color: #ff6600;
-  border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
 }
-
-form button {
-  width: 200px;
-}
-
 /*--------------------------------contact section--------------------*/
 .contact-image {
   background: url('../media/backdrops/contack-background.jpg');
@@ -386,14 +358,14 @@ form button {
 .field * {
   display: block;
   margin: 0 auto;
-  min-width: 250px;
-  line-height: 1.5;
+  min-width: 700px;
+  line-height: 2.5;
   font-size: 14px;
 }
 
 input[type="submit"] {
   display: block;
-  margin: 0 auto;
+  margin: 10px;
   padding: 6px 30px;
   font-size: 14px;
   background-color: rgba(114, 188, 195, 0.7);
