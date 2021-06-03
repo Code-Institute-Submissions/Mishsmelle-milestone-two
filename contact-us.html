@@ -41,27 +41,20 @@
 <!--End of Nav Bar -->
 <!--Start of Contact form code-->
 
-<section>
-    <form id="form">
-        <div class="field">
-          <label for="to_name">to_name</label>
-          <input type="text" name="to_name" id="to_name">
-        </div>
-        <div class="field">
-          <label for="from_name">from_name</label>
-          <input type="text" name="from_name" id="from_name">
-        </div>
-        <div class="field">
-          <label for="message">message</label>
-          <input type="text" name="message" id="message">
-        </div>
-        <div class="field">
-          <label for="reply_to">reply_to</label>
-          <input type="text" name="reply_to" id="reply_to">
-        </div>
-      
-        <input type="submit" id="button" value="Send Email" >
+<section id="contact">
+  <div class="col-12 form-container">
+      <h2>Contact Us!</h2>
+      <p id="success">Your email has been sent, a member of our team will be in touch shortly.</p>
+      <p id="failed">I'm sorry, something went wrong. Please make sure that all your details are correct and try again.</p>
+      <form id="contactForm" onsubmit="return sendMail(this);">
+          <input type="text" name="name" id="fullname" placeholder="Your Full Name" class="form-control" required />
+          <input type="email" name="email" id="emailaddress" placeholder="Email Address" class="form-control" required />
+          <textarea rows="8" name="message" id="message" placeholder="Message" class="form-control" required></textarea>
+          <div class="form-button">
+              <button type="submit" id="send-button">Send</button>
+          </div>
       </form>
+  </div>
 </section>
 
   <!--End of Contact Form Code-->
@@ -151,13 +144,13 @@
                 </div>
               </footer>
                         <!--End of Footer -->
-                    <script src="assets/contact.js"></script>
-                    <script type="text/javascript"
-                    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-                  
-                  <script type="text/javascript">
-                    emailjs.init('user_1ilrZEz7NMfb6rf9JVGii')
-                  </script>
-     
+                    <script src="assets/js/contact.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+                    <script>
+                        (function () {
+                            emailjs.init("user_1ilrZEz7NMfb6rf9JVGii");
+                        })();
+                    </script>
+
         </body>
         </html>
