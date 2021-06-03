@@ -423,8 +423,13 @@ footer ul li{
 
 .fa{
   color:#9c9c9c;
-  margin-right: 15px;
+  margin-right: 35px;
   font-size:14px;
 }
 
+.newsletter{
+  float: right;
+  margin-left: 60px;
+  text-align: right;
+}
 /*--------------------- End of footer */
