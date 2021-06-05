@@ -49,14 +49,15 @@ Quiz Wireframe - [View]("assets/images/Quiz-desktop-wireframe.png")
 
 ## Frameworks, Libraries & Programs Used
 * [Bootstrap]() was used to assist with the responsiveness and styling of the website.
-* [Google Fonts]() used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+* [Google Fonts]() used to import the font into the style.css file which is used on all pages throughout the project.
 * [Font Awesome]() used on all pages throughout the website to add icons for aesthetic and UX purposes.
 * [jQuery]() came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
-* [Gitpod]() was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-* [GitHub]() is used to store the projects code after being pushed from Git.
-* [Canva]() used to create the logo, resizing images and editing photos for the website.
+* [Gitpod](https://ivory-chicken-o25zvxtn.ws-eu08.gitpod.io/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [GitHub](https://github.com/Mishsmelle/milestone-two) is used to store the projects code after being pushed from Git.
+* [Canva](https://www.canva.com/) used to create the logo, resizing images and editing photos for the website.
 * [Balsamiq]() used to create the wireframes during the design process.
 * [Vue]() used for the interactive quiz. 
+* [Email JS](https://dashboard.emailjs.com/admin/templates/30bekqu) used for the contact form. 
 
 # Testing
 
