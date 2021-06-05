@@ -65,6 +65,10 @@
 </div>
 <!--end of intro section-->
 
+<button type="button" onclick="javascript:changeCenter(location1);">Burgundy</button>
+<button type="button" onclick="javascript:changeCenter(location2);">Bordeaux</button>
+<button type="button" onclick="javascript:changeCenter(location3);">Champagne</button>
+
 <!-- Start of Google Map-->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
@@ -77,8 +81,8 @@
 
 <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
 <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4C8pA5ivo0Pg8d-DxfkvAIg0tjodc55s&callback=initMap&libraries=&v=weekly"
-  async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4C8pA5ivo0Pg8d-DxfkvAIg0tjodc55s&callback=initMap&libraries=places&v=weekly"
+async
 ></script>
 
 <!--End of Google Map-->

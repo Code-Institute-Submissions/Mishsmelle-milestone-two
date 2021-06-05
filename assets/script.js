@@ -130,3 +130,7 @@ window.onload = function() {
         }
     });
 }
+function changeCenter(center) {
+    map.setCenter(center);
+    marker.setPosition(center);
+  }
