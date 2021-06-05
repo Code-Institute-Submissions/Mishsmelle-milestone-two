@@ -20,8 +20,8 @@ display: table;
 #header-style{
    background-color: #d1f0c9;
    padding: 30px 0px;
-}	     
-
+}	  
+   
 body {
   background: #ffffff;
      -webkit-background-size: cover;
@@ -38,6 +38,14 @@ body {
 h1, h2, h3 {
   font-family: 'Bodoni Moda', serif !important;
 }
+@media screen and (max-width: 600px) {
+  h2{
+    line-height: 1;
+  }
+  p{
+    line-height: 1;
+  }
+  }
 
 #quiz-logo{
 text-align: center;
@@ -66,6 +74,16 @@ margin: 1rem;
 .active{
   border-bottom: 1px solid #777777;
 }
+@media screen and (max-width: 600px) {
+  #menu {
+    width: 100%;
+  }
+    #menu li{
+      font-size: 15px;
+      padding-left: 15px;
+    }
+  }
+
 
 /*End of Nav bar styling*/
 
@@ -95,6 +113,12 @@ transform: translate(-50%, -50%);
 color: black;
 font-size: 30px;
 }
+@media screen and (max-width: 600px) {
+  .hero-text{
+    font-size: 60%;
+    color: #fff;
+  }
+  }
 /* End of Hero Image styling*/
 
 /*image row styling*/
@@ -301,6 +325,12 @@ padding: 10px;
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  #form{
+    width: 70%;
+    margin: 10px;
+  }
+  }
 
 form input {
   padding-top: 10px;
