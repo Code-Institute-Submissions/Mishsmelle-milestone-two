@@ -110,7 +110,7 @@ window.onload = function() {
                 this.questionIndex=0;
             },
             score: function() {
-                //find the highest occurence in responses
+                //find the highest occurence in responses code credit: https://stackoverflow.com/questions/1053843/get-the-element-with-the-highest-occurrence-in-an-array/38846107
                 var modeMap = {};
                 var maxEl = this.userResponses[0],
                     maxCount = 1;
