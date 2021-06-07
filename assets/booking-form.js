@@ -1,20 +1,26 @@
-const btn = document.getElementById('button');
+function oneFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Send me a Bordeaux wine tour brochure") {
+    x.innerHTML = "Send me a Bordeaux wine tour brochure";
+  } else {
+    x.innerHTML = "Send me a Bordeaux wine tour brochure";
+  }
+}
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+function twoFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Send me a Bordeaux wine tour brochure") {
+    x.innerHTML = "Send me a Burgundy wine tour brochure";
+  } else {
+    x.innerHTML = "Send me a Burgundy wine tour brochure";
+  }
+}
 
-   btn.value = 'Sending...';
-
-   const serviceID = 'service_uctg97s';
-   const templateID = 'template_sqxrh2i';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
+function threeFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Send me a Bordeaux wine tour brochure") {
+    x.innerHTML = "Send me a Champagne wine tour brochure";
+  } else {
+    x.innerHTML = "Send me a Champagne wine tour brochure";
+  }
+}

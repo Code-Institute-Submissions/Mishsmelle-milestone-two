@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -11,94 +11,230 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Pinot Gogo</title>
-  </head>
+  </head> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pinot Gogo</title>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link href="assets/style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
+</head>
+
+<body>
+  <header id="header-style">
+    <div id="quiz-logo">
+      <img src="assets/images/pinot-logo.png" alt="brand logo">
+    </div>
+    <!--navigation bar-->
+    <nav>
+      <ul id="menu">
+        <li>
+          <a class="active" href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="explore-wine-tours.html">Explore Wine Tours</a>
+        </li>
+        <li>
+          <a href="contact-us.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <!--End of Nav Bar -->
   <!-- elements of form copied from bootstrap documentation and edited to suit -->
+  <section id="bookingform">
+    <div class="newsletter-signup-section col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 bg-color__blue-opaque">
 
-  <div class="newsletter-signup-section col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 bg-color__blue-opaque">
-
-    <form action="https://formdump.codeinstitute.net/" method="POST" enctype="multipart/form-data" class="newsletter-signup-form">
-      <div class="newsletter-signup-heading">
-        <h1>Send me a <div id="myDIV">Bordeaux</div> wine tour brochure</h1>
-        <hr class="block-divider block-divider__grey">
-      </div>
-      <div class="form-row signup-form-item">
-        <div class="col-12 col-md-6 mb-2 mb-md-0">
-          <input type="text" class="form-control" placeholder="First name" name="first_name">
+      <form action="https://formdump.codeinstitute.net/" method="POST" enctype="multipart/form-data"
+        class="newsletter-signup-form">
+        <div class="newsletter-signup-heading">
+          <div id="myDIV">
+          <h1>Send me a Bordeaux wine tour brochure</h1></div>
+          <hr class="block-divider block-divider__grey">
         </div>
-        <div class="col-12 col-md-6">
-          <input type="text" class="form-control" placeholder="Last name" name="last_name">
-        </div>
-      </div>
-      <div class="form-row signup-form-item">
-        <div class="col">
-          <label for="signupEmail" hidden>Email address</label>
-          <input type="email" class="form-control" id="signupEmail" placeholder="Email: name@example.com" name="email_address">
-        </div>
-      </div>
-      <div class="form-row signup-form-item">
-        <div class="col col-lg-6">
-          <select class="form-control" id="signupExperience" name="experience_level">
-            <option disabled selected>Choose a package type</option>
-            <option value="beginner">Basic - price range €600 - €900</option>
-            <option value="intermediate">Luxury - price range €900 - €1100</option>
-            <option value="advanced">Extensive - price range €1100 - €1400</option>
-          </select>
-        </div>
-      </div>
-      <div class="signup-form-item club-interests-container">
-        <p><strong>Would you like to include any of the following extras in your package?</strong></p>
-        <div class="interests-checkbox" id="interestsCheckbox">
-          <div class="form-row">
-            <div class="form-check form-check-inline col-12 col-md-5">
-              <input class="form-check-input" type="checkbox" name="signup_interest[local_info]" value="local_info" id="interestInfo">
-              <label class="form-check-label" for="interestInfo">
-                Chauffeur driven SUV
-              </label>
-            </div>
-            <div class="form-check form-check-inline col-12 col-md-6">
-              <input class="form-check-input" type="checkbox" name="signup_interest[group_events]" value="group_events" id="interestEvents">
-              <label class="form-check-label" for="interestEvents">
-                Michelin star restaurants 
-              </label>
-            </div>
+        <div class="form-row signup-form-item">
+          <div class="col-12 col-md-6 mb-2 mb-md-0">
+            <input type="text" class="form-control" placeholder="First name" name="first_name">
           </div>
-          <div class="form-row">
-            <div class="form-check form-check-inline col-12 col-md-5">
-              <input class="form-check-input" type="checkbox" name="signup_interest[social_meetups]" value="social_meetups" id="interestSocial">
-              <label class="form-check-label" for="interestSocial">
-                Private guided wine cellar tour 
-              </label>
-            </div>
-            <div class="form-check form-check-inline col-12 col-md-6">
-              <input class="form-check-input" type="checkbox" name="signup_interest[conditions_info]" value="conditions_info" id="interestConditions">
-              <label class="form-check-label" for="interestConditions">
-                Grape pressing experience.
-              </label>
-            </div>
+          <div class="col-12 col-md-6">
+            <input type="text" class="form-control" placeholder="Last name" name="last_name">
           </div>
         </div>
-      </div>
+        <div class="form-row signup-form-item">
+          <div class="col">
+            <label for="signupEmail" style="color: white">Email address</label>
+            <input type="email" class="form-control" id="signupEmail" placeholder="Email: name@example.com"
+              name="email_address">
+          </div>
+        </div>
+        <div class="form-row signup-form-item">
+          <div class="col col-lg-6">
+            <select class="form-control" id="signupExperience" name="experience_level">
+              <option disabled selected>Choose a package type</option>
+              <option value="beginner">Basic - price range €600 - €900</option>
+              <option value="intermediate">Luxury - price range €900 - €1100</option>
+              <option value="advanced">Extensive - price range €1100 - €1400</option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="signup-form-item club-interests-container" style="margin-top: 5px" style="float: left">
+          <p><strong>Would you like to include any of the following extras in your package?</strong></p>
+          <div class="interests-checkbox" id="interestsCheckbox">
+            <div class="form-row">
+              <div class="form-check form-check-inline col-12 col-md-5">
+                <input class="form-check-input" type="checkbox" name="signup_interest[local_info]" value="local_info"
+                  id="interestInfo">
+                <label class="form-check-label" for="interestInfo">
+                  Chauffeur driven SUV
+                </label>
+              </div>
+              <div class="form-check form-check-inline col-12 col-md-6">
+                <input class="form-check-input" type="checkbox" name="signup_interest[group_events]"
+                  value="group_events" id="interestEvents">
+                <label class="form-check-label" for="interestEvents">
+                  Michelin star restaurants
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-check form-check-inline col-12 col-md-5">
+                <input class="form-check-input" type="checkbox" name="signup_interest[social_meetups]"
+                  value="social_meetups" id="interestSocial">
+                <label class="form-check-label" for="interestSocial">
+                  Private guided wine cellar tour
+                </label>
+              </div>
+              <div class="form-check form-check-inline col-12 col-md-6">
+                <input class="form-check-input" type="checkbox" name="signup_interest[conditions_info]"
+                  value="conditions_info" id="interestConditions">
+                <label class="form-check-label" for="interestConditions">
+                  Grape pressing experience.
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+<br>
+        <div class="form-row signup-form-item signup-comments-container">
+          <div class="col">
+            <label for="signupFormComments" hidden><strong>We have included a map below of each region, if you would
+                like to add any particular hotels or restaurants to your itinery, please let us know
+                here.</strong></label>
+            <textarea class="form-control" id="signupFormComments" rows="4" placeholder="Any other comments?"
+              name="signup_comments"></textarea>
+          </div>
+        </div>
 
-      <div class="form-row signup-form-item signup-comments-container">
-        <div class="col">
-          <label for="signupFormComments" hidden><strong>We have included a map below of each region, if you would like to add any particular hotels or restaurants to your itinery, please let us know here.</strong></label>
-          <textarea class="form-control" id="signupFormComments" rows="4" placeholder="Any other comments?" name="signup_comments"></textarea>
+        <div class="form-row text-center signup-form-item mt-0">
+          <div class="col">
+            <button type="submit" class="btn btn-signup btn-signup-lg">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    </div>
+  </section>
+  <!--Start of Footer -->
+  <footer>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4 col-lg-3">
+          <ul class="address">
+            <span>Get in touch</span>
+            <li>
+              <p>Pinot Gogo,
+                12 Grafton Street, Dublin 2. D02 T3K4</p>
+            </li>
+
+            <li>
+              <p>+01 677 4330</p>
+            </li>
+
+            <li>
+              <p><a href="mailto:info@pinotgogo.com">info@pinotgogo.com</a></p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-4 col-lg-3">
+          <ul class="contact">
+            <span>Find Out More</span>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about-us.html">About</a>
+            </li>
+
+            <li>
+              <a href="explore-wine-tours.html">Book a wine tour</a>
+            </li>
+
+            <li>
+              <a href="contact-us.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-4 col-lg-3">
+          <ul class="social">
+            <span>Social</span>
+            <li>
+              <a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com"><i class="fa fa-pinterest fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="https://www.google.com"><i class="fa fa-google fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-md-4 col-lg-3">
+          <ul class="social">
+            <span>Stay Connected</span>
+            <li>
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name.." class="newsletter">
+            </li>
+            <li>
+              <label for="fname">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email address.." class="newsletter">
+            </li>
         </div>
       </div>
+    </div>
+  </footer>
+  <!--End of Footer -->
+</body>
 
-      <div class="form-row text-center signup-form-item mt-0">
-        <div class="col">
-          <button type="submit" class="btn btn-signup btn-signup-lg">Submit</button>
-        </div>
-      </div>
-    </form>
-  </div>
+</html>
 
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-                              
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>

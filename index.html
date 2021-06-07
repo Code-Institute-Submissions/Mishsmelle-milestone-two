@@ -1,234 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Pinot Gogo</title>
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <link href="assets/style.css" rel="stylesheet" type="text/css" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
-  </head>
-  <body>
-    <header id="header-style">
-    <div id="quiz-logo">
-    <img src="assets/images/pinot-logo.png" alt="brand logo">
-    </div>
-     <!--navigation bar-->
-  <nav>
-            <ul id="menu">
-              <li>
-                <a class="active" href="index.html">Home</a>
-              </li>
-                <li>
-                    <a href="explore-wine-tours.html">Explore Wine Tours</a>
-                </li>
-                <li>
-                    <a href="contact-us.html">Contact Us</a>
-                </li>
-                 <li>
-                    <a href="about-us.html">About Us</a>
-                </li>
-                
-            </ul>
-        </nav>
-        </header>
-<!--End of Nav Bar -->
 
-<!--Hero Image section...code credit: https://www.w3schools.com/howto/howto_css_hero_image.asp-->
-<div class="hero-image">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pinot Gogo</title>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link href="assets/style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
+</head>
+
+<body>
+  <header id="header-style">
+    <div id="quiz-logo">
+      <img src="assets/images/pinot-logo.png" alt="brand logo">
+    </div>
+    <!--navigation bar-->
+    <nav>
+      <ul id="menu">
+        <li>
+          <a class="active" href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="explore-wine-tours.html">Explore Wine Tours</a>
+        </li>
+        <li>
+          <a href="contact-us.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <!--End of Nav Bar -->
+
+  <!--Hero Image section...code credit: https://www.w3schools.com/howto/howto_css_hero_image.asp-->
+  <div class="hero-image">
     <img src="assets/images/hero-resized.png" class="heroimg" alt="vineyard">
     <div class="hero-text">
       <h1>Explore</h1>
       <p>Find a wine tour to suit you</p>
-      <button onclick="window.location.href='#wine-quiz'">Not sure which wine is for you? Take our quiz to find out!</button></a>
+      <button onclick="window.location.href='#wine-quiz'">Not sure which wine is for you? Take our quiz to find
+        out!</button></a>
     </div>
   </div>
   <!--End of Hero Image-->
   <!--Image Row..code credit: https://www.w3schools.com/howto/howto_css_image_overlay.asp-->
-<section id="img-row">
-<h2>Most popular wine regions</h2>
-<p>Choose from one of our top three destinations</p>
-
-<div class="row">
-
-<div class="column">
-<div class="container">
-  <img src="assets/images/wine-tour-1.jpg" class="image" style="width:100%" alt="two women tasting wine">
-  <div class="middle">
-    <div class="text" id="champagne-button">Champagne</button></div>
-  </div>
-</div>
-</div>
-
-<div class="column">
-<div class="container">
-  <img src="assets/images/wine-tour-2.png" class="image" style="width:100%" alt="waiter pouring wine">
-  <div class="middle">
-    <div class="text" id="burgundy-button">Burgundy</button></div>
-  </div>
-</div>
-</div>
-
-<div class="column">
-  <div class="container">
-  <img src="assets/images/wine-tour-3.png" class="image" style="width:100%" alt="group toasting wine">
-  <div class="middle">
-    <div class="text" id="bordeaux-button">Bordeaux</button></div>
-  </div>
-</div>
-</div>
-</div>
-  </section>
-<!--End of Image Row-->
-<br>
-       <!--Start of Find Your Ideal Wine Quiz code credit: https://codepen.io/heatherduvall/pen/ggedwy -->
-       <section id="wine-quiz">
-       <div id="quiz-box";>
- <div id="app" v-cloak>
+  <section id="img-row">
+    <h2>Most popular wine regions</h2>
+    <p>Choose from one of our top three destinations</p>
 
     <div class="row">
-      <div class="large-12 columns">
-        <h1>{{ quiz.title }}</h1>
-      <div id="container">
-        <div class="callout">
-  
-          <div v-for="(question, index) in quiz.questions">
-            <!-- Hide all questions, show only the one with index === to current question index -->
-            <div v-show="index === questionIndex">
-              <h3>{{ question.text }}</h3>
-              <ul style="list-style-type: none">
-                <!-- for each response of the current question -->
-                <li v-for="response in question.responses">
-                  <label>
-                                      <input type="radio"
-                                             v-bind:value="response.value"
-                                             v-bind:name="index"
-                                             v-model="userResponses[index]"> {{response.text}}
-                                    </label>
-                </li>
-  
-              </ul>
-              <!-- The two navigation buttons -->
-              <!-- Note: prev is hidden on first question -->
-              <button class="secondary button" v-if="questionIndex > 0" v-on:click="prev">
-                      prev
-                    </button>
-              <button class="success button" v-on:click="next">
-                      next
-                    </button>
-            </div>
+
+      <div class="column">
+        <div class="container">
+          <img src="assets/images/wine-tour-1.jpg" class="image" style="width:100%" alt="two women tasting wine">
+          <div class="middle">
+            <div class="text" id="champagne-button">Champagne</button></div>
           </div>
-  </div>
-          <!-- Last page, quiz is finished, display result -->
-          <div v-show="questionIndex === quiz.questions.length" id="your-result">
-            <h3>Your Results</h3>
-            <p>
-              Your ideal wine is {{ score() }}
-            </p>
-            <p>You should try the full-bodied, savory wine that is grown all over France. 60% of all Cabernet Sauvignon is from the Medoc region of Bordeaux, France. People like you like all things classic. They have great personalities and are very down-to-earth. The wine itself is bold and has higher levels of alcohol than most other kinds of wine. It is dark and beautiful and pairs amazingly with red and/or smoked meats like lamb and beef, and aged and hard cheeses.<br><a href="explore-wine-tours.html">Click here to find a tour of the best  {{ score() }} vineyards</a></p>  <button class="secondary button" v-if="questionIndex > 0" v-on:click="restart">
-                      Restart
-                    </button>
-  
-          </div>
-  
         </div>
-  
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <img src="assets/images/wine-tour-2.png" class="image" style="width:100%" alt="waiter pouring wine">
+          <div class="middle">
+            <div class="text" id="burgundy-button">Burgundy</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <img src="assets/images/wine-tour-3.png" class="image" style="width:100%" alt="group toasting wine">
+          <div class="middle">
+            <div class="text" id="bordeaux-button">Bordeaux</button></div>
+          </div>
+        </div>
       </div>
     </div>
-  
-  </div>
-</div>
-</section>
-      <!--End  of Find Your Ideal Wine Quiz -->
-          <!--Start of Footer -->
-<footer>
+  </section>
+  <!--End of Image Row-->
+  <br>
+  <!--Start of Find Your Ideal Wine Quiz code credit: https://codepen.io/heatherduvall/pen/ggedwy -->
+  <section id="wine-quiz">
+    <div id="quiz-box" ;>
+      <div id="app" v-cloak>
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
+        <div class="row">
+          <div class="large-12 columns">
+            <h1>{{ quiz.title }}</h1>
+            <div id="container">
+              <div class="callout">
+
+                <div v-for="(question, index) in quiz.questions">
+                  <!-- Hide all questions, show only the one with index === to current question index -->
+                  <div v-show="index === questionIndex">
+                    <h3>{{ question.text }}</h3>
+                    <ul style="list-style-type: none">
+                      <!-- for each response of the current question -->
+                      <li v-for="response in question.responses">
+                        <label>
+                          <input type="radio" v-bind:value="response.value" v-bind:name="index"
+                            v-model="userResponses[index]"> {{response.text}}
+                        </label>
+                      </li>
+
+                    </ul>
+                    <!-- The two navigation buttons -->
+                    <!-- Note: prev is hidden on first question -->
+                    <button class="secondary button" v-if="questionIndex > 0" v-on:click="prev">
+                      prev
+                    </button>
+                    <button class="success button" v-on:click="next">
+                      next
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Last page, quiz is finished, display result -->
+              <div v-show="questionIndex === quiz.questions.length" id="your-result">
+                <h3>Your Results</h3>
+                <p>
+                  Your ideal wine is {{ score() }}
+                </p>
+                <p>You should try the full-bodied, savory wine that is grown all over France. 60% of all Cabernet
+                  Sauvignon is from the Medoc region of Bordeaux, France. People like you like all things classic. They
+                  have great personalities and are very down-to-earth. The wine itself is bold and has higher levels of
+                  alcohol than most other kinds of wine. It is dark and beautiful and pairs amazingly with red and/or
+                  smoked meats like lamb and beef, and aged and hard cheeses.<br><a href="explore-wine-tours.html">Click
+                    here to find a tour of the best {{ score() }} vineyards</a></p> <button class="secondary button"
+                  v-if="questionIndex > 0" v-on:click="restart">
+                  Restart
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--End  of Find Your Ideal Wine Quiz -->
+   <!--Start of Footer -->
+   <footer>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <div class="container">
-        <div class="row">
-            <div class="col-xs-6 col-md-4 col-lg-3">
-                <ul class="address">
-                     <span>Get in touch</span>    
-                     <li>
-                        <p>Pinot Gogo,    
-                          12 Grafton Street, Dublin 2. D02 T3K4</p>
-                      </li>
-                           
-                      <li>
-                        <p>+01 677 4330</p>
-                      </li>
-                           
-                      <li>
-                        <p><a href="mailto:info@pinotgogo.com">info@pinotgogo.com</a></p>
-                      </li>
-                 </ul>
-            </div>
-            
-            <div class="col-xs-6 col-md-4 col-lg-3">
-                <ul class="contact">
-                     <span>Find Out More</span>    
-                     <li>
-                        <a href="index.html">Home</a>
-                      </li>
-                           
-                      <li>
-                         <a href="about-us.html">About</a>
-                      </li>
-                           
-                      <li>
-                         <a href="explore-wine-tours.html">Book a wine tour</a>
-                      </li>
-                           
-                      <li>
-                        <a href="contact-us.html">Contact</a>
-                     </li>
-                </ul>
-            </div>
-       
-            <div class="col-xs-6 col-md-4 col-lg-3">
-                <ul class="social">
-                   <span>Social</span>    
-                   <li>
-                        <a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
-                   </li>
-                    
-                   <li>
-                        <a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></a>
-                   </li>
-                   
-                   <li>
-                        <a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
-                   </li>
-                  <li>
-                        <a href="https://www.pinterest.com"><i class="fa fa-pinterest fa-2x"></i></a>
-                   </li>
-                   <li>
-                    <a href="https://www.google.com"><i class="fa fa-google fa-2x"></i></a>
-               </li>
-                 </ul>
-            </div>
-                        <div class="col-xs-6 col-md-4 col-lg-3">
-                <ul class="social">
-                     <span>Stay Connected</span>            
-                      <li>
-                        <label for="fname">Name</label>
-    <input type="text" id="fname" name="name" placeholder="Your name.." class="newsletter">
-                      </li>
-                        <li>
-                        <label for="fname">Email</label>
-    <input type="text" id="email" name="email" placeholder="Your email address.." class="newsletter">
-                      </li>
-            </div>
-       </div> 
+      <div class="row">
+        <div class="col-xs-6 col-md-4 col-lg-3">
+          <ul class="address">
+            <span>Get in touch</span>
+            <li>
+              <p>Pinot Gogo,
+                12 Grafton Street, Dublin 2. D02 T3K4</p>
+            </li>
+
+            <li>
+              <p>+01 677 4330</p>
+            </li>
+
+            <li>
+              <p><a href="mailto:info@pinotgogo.com">info@pinotgogo.com</a></p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-4 col-lg-3">
+          <ul class="contact">
+            <span>Find Out More</span>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about-us.html">About</a>
+            </li>
+
+            <li>
+              <a href="explore-wine-tours.html">Book a wine tour</a>
+            </li>
+
+            <li>
+              <a href="contact-us.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-4 col-lg-3">
+          <ul class="social">
+            <span>Social</span>
+            <li>
+              <a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com"><i class="fa fa-pinterest fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="https://www.google.com"><i class="fa fa-google fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-md-4 col-lg-3">
+          <ul class="social">
+            <span>Stay Connected</span>
+            <li>
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name.." class="newsletter">
+            </li>
+            <li>
+              <label for="fname">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email address.." class="newsletter">
+            </li>
+        </div>
+      </div>
     </div>
   </footer>
-            <!--End of Footer -->
-            <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-            <script src="assets/script.js"></script>
-          </script>
+  <!--End of Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script src="assets/script.js"></script>
+  </script>
 </body>
+
 </html>
