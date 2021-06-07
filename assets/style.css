@@ -314,6 +314,15 @@ box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 margin:  25% 20% 5% 20%;
 font-size: 25px;
 }
+
+@media screen and (max-width: 600px) {
+  #aboutus-text{
+    margin: 10%;
+    font-size: x-small;
+  }
+  }
+
+
 /* End of About Us styling */
 
 /*--Contact Us styling--------------------*/
@@ -341,7 +350,6 @@ form input {
 }
 /*--------------------------------contact section--------------------*/
 .contact-image {
-  background: url('../media/backdrops/contack-background.jpg');
   height: 90vh;
   background-position: center;
   background-size: cover;
@@ -413,8 +421,23 @@ input[type="submit"] {
 }
 /*----End of Contact Us styling--*/
 
+/*---Booking form styling-->*/
+#bookingform{
+  display: inline;
+  margin-left: 10%;
+}
+.col{
+  padding-bottom: 6%;
+}
+
+#signupExperience{
+  margin-top: 5%;
+}
+
+/*---End of Booking form styling-->
 /*--------------------- Start of footer */
 footer{
+    clear: both;
    background-color: #d1f0c9;
    padding:70px 0px;
 }	       
@@ -463,6 +486,5 @@ footer a{
 
 .newsletter{
   margin-left: 40px;
-
 }
 /*--------------------- End of footer */
