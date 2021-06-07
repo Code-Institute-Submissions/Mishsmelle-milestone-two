@@ -1,166 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Pinot Gogo</title>
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <link href="assets/style.css" rel="stylesheet" type="text/css" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-  </head>
-  <body>
-    <header id="header-style">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pinot Gogo</title>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link href="assets/style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
+</head>
+
+<body>
+  <header id="header-style">
     <div id="quiz-logo">
-    <img src="assets/images/pinot-logo.png" alt="brand logo">
+      <img src="assets/images/pinot-logo.png" alt="brand logo">
     </div>
-     <!--navigation bar-->
-  <nav>
-            <ul id="menu">
+    <!--navigation bar-->
+    <nav>
+      <ul id="menu">
+        <li>
+          <a class="active" href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="explore-wine-tours.html">Explore Wine Tours</a>
+        </li>
+        <li>
+          <a href="contact-us.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <!--End of Nav Bar -->
+  <!--Start of Contact form code-->
+
+  <section id="contact">
+    <form id="form">
+
+      <div class="field">
+        <label for="from_name">Name</label>
+        <input type="text" name="from_name" id="from_name">
+      </div>
+      <div class="field">
+        <label for="message">Your message</label>
+        <input type="text" name="message" id="message" style="min-height:400px;">
+      </div>
+      <div class="field">
+        <label for="reply_to">Email Address</label>
+        <input type="text" name="reply_to" id="reply_to">
+      </div>
+
+      <input type="submit" id="button" value="Send Email">
+    </form>
+
+    <!--End of Contact Form Code-->
+
+
+    <!--Start of Footer -->
+    <footer>
+
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-4 col-lg-3">
+            <ul class="address">
+              <span>Get in touch</span>
               <li>
-                <a class="active" href="index.html">Home</a>
+                <p>Pinot Gogo,
+                  12 Grafton Street, Dublin 2. D02 T3K4</p>
               </li>
-                <li>
-                    <a href="explore-wine-tours.html">Explore Wine Tours</a>
-                </li>
-                <li>
-                    <a href="contact-us.html">Contact Us</a>
-                </li>
-                 <li>
-                    <a href="about-us.html">About Us</a>
-                </li>
-                
+
+              <li>
+                <p>+01 677 4330</p>
+              </li>
+
+              <li>
+                <p><a href="mailto:info@pinotgogo.com">info@pinotgogo.com</a></p>
+              </li>
             </ul>
-        </nav>
-        </header>
-<!--End of Nav Bar -->
-<!--Start of Contact form code-->
+          </div>
 
-<section id="contact">
-  <form id="form">
+          <div class="col-xs-6 col-md-4 col-lg-3">
+            <ul class="contact">
+              <span>Find Out More</span>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
 
-    <div class="field">
-      <label for="from_name">Name</label>
-      <input type="text" name="from_name" id="from_name">
-    </div>
-    <div class="field">
-      <label for="message">Your message</label>
-      <input type="text" name="message" id="message"style="min-height:400px;">
-    </div>
-    <div class="field">
-      <label for="reply_to">Email Address</label>
-      <input type="text" name="reply_to" id="reply_to">
-    </div>
-  
-    <input type="submit" id="button" value="Send Email" >
-  </form>
-  
-  <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  
-  <script type="text/javascript">
-    emailjs.init('user_1ilrZEz7NMfb6rf9JVGii')
-  </script>
+              <li>
+                <a href="about-us.html">About</a>
+              </li>
 
-  <!--End of Contact Form Code-->
-  
-  
-          <!--Start of Footer -->
-          <footer>
+              <li>
+                <a href="explore-wine-tours.html">Book a wine tour</a>
+              </li>
 
-            <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
-            
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-6 col-md-4 col-lg-3">
-                            <ul class="address">
-                                 <span>Get in touch</span>    
-                                 <li>
-                                    <p>Pinot Gogo,    
-                                      12 Grafton Street, Dublin 2. D02 T3K4</p>
-                                  </li>
-                                       
-                                  <li>
-                                    <p>+01 677 4330</p>
-                                  </li>
-                                       
-                                  <li>
-                                    <p><a href="mailto:info@pinotgogo.com">info@pinotgogo.com</a></p>
-                                  </li>
-                             </ul>
-                        </div>
-                        
-                        <div class="col-xs-6 col-md-4 col-lg-3">
-                          <ul class="contact">
-                               <span>Find Out More</span>    
-                               <li>
-                                  <a href="index.html">Home</a>
-                                </li>
-                                     
-                                <li>
-                                   <a href="about-us.html">About</a>
-                                </li>
-                                     
-                                <li>
-                                   <a href="explore-wine-tours.html">Book a wine tour</a>
-                                </li>
-                                     
-                                <li>
-                                  <a href="contact-us.html">Contact</a>
-                               </li>
-                          </ul>
-                      </div>
-                   
-                        <div class="col-xs-6 col-md-4 col-lg-3">
-                            <ul class="social">
-                               <span>Social</span>    
-                               <li>
-                                    <a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
-                               </li>
-                                
-                               <li>
-                                    <a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></a>
-                               </li>
-                               
-                               <li>
-                                    <a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
-                               </li>
-                              <li>
-                                    <a href="https://www.pinterest.com"><i class="fa fa-pinterest fa-2x"></i></a>
-                               </li>
-                               <li>
-                                <a href="https://www.google.com"><i class="fa fa-google fa-2x"></i></a>
-                           </li>
-                             </ul>
-                        </div>
-                                    <div class="col-xs-6 col-md-4 col-lg-3">
-                            <ul class="social">
-                                 <span>Stay Connected</span>            
-                                  <li>
-                                    <label for="fname">Name</label>
+              <li>
+                <a href="contact-us.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-4 col-lg-3">
+            <ul class="social">
+              <span>Social</span>
+              <li>
+                <a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></a>
+              </li>
+
+              <li>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com"><i class="fa fa-pinterest fa-2x"></i></a>
+              </li>
+              <li>
+                <a href="https://www.google.com"><i class="fa fa-google fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-4 col-lg-3">
+            <ul class="social">
+              <span>Stay Connected</span>
+              <li>
+                <label for="fname">Name</label>
                 <input type="text" id="fname" name="name" placeholder="Your name.." class="newsletter">
-                                  </li>
-                                    <li>
-                                    <label for="fname">Email</label>
+              </li>
+              <li>
+                <label for="fname">Email</label>
                 <input type="text" id="email" name="email" placeholder="Your email address.." class="newsletter">
-                                  </li>
-                        </div>
-                   </div> 
-                </div>
-              </footer>
-                        <!--End of Footer -->
-x                    <script src="assets/contact.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script>
-    (function () {
-        emailjs.init("user_1ilrZEz7NMfb6rf9JVGii");
-    })();
-</script>
+              </li>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End of Footer -->
 
-        </body>
-        </html>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("user_1ilrZEz7NMfb6rf9JVGii");
+      })();
+    </script>
+    <script src="assets/contact.js"></script>
+
+</body>
+
+</html>
