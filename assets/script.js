@@ -1,6 +1,6 @@
 "use strict";
 
-window.onload = function() {
+window.onload = function () {
 
     var quiz = {
         title: 'Find Your Ideal Wine',
@@ -98,18 +98,18 @@ window.onload = function() {
         },
         methods: {
             // Go to next question
-            next: function() {
+            next: function () {
                 this.questionIndex++;
                 console.log(this.userResponses);
             },
             // Go to previous question
-            prev: function() {
+            prev: function () {
                 this.questionIndex--;
             },
-            restart: function() {
-                this.questionIndex=0;
+            restart: function () {
+                this.questionIndex = 0;
             },
-            score: function() {
+            score: function () {
                 //find the highest occurence in responses code credit: https://stackoverflow.com/questions/1053843/get-the-element-with-the-highest-occurrence-in-an-array/38846107
                 var modeMap = {};
                 var maxEl = this.userResponses[0],
@@ -130,7 +130,8 @@ window.onload = function() {
         }
     });
 }
+
 function changeCenter(center) {
     map.setCenter(center);
     marker.setPosition(center);
-  }
+}
