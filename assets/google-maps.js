@@ -5,17 +5,17 @@
     lng: -0.5763232548853524
   };
   var location2 = {
-    lat: 47.05400393088885,
-    lng: 4.383269628922687
+    lat: 47.021639992506515, 
+    lng: 4.835197287766264
   };
   var location3 = {
-   lat: 45.837058438142286,
-    lng:  -0.9175872524314757
+   lat: 45.82846252931366, 
+    lng:  -0.8758340317909924
   };
 
   function initMap() {
     var myOptions = {
-      zoom: 13,
+      zoom: 16,
       center: location1,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
