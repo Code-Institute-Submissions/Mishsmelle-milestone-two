@@ -1,5 +1,7 @@
 # Pinot Gogo Website
 
+![alt text](https://screenshot.click/07-23-kpy5n-lu09u.png)
+
 [View the live project here.](https://mishsmelle.github.io/milestone-two/)
 
 This is a presentation website for assessment by the Code Institute. This focus of this assessment is interactive frontend development. The site should respond to users actions, allowing users to actively engage with data, alter the way data is displayed to achieve their goals. To demonstrate these skills I have built a wine tour website. The company is called Pinot Gogo and they are an irish owned luxury package tour operator. The site includes a js contact form, google maps api and an interactive quiz to allow suers to find a wine that suits them in a fun way. 
