@@ -461,6 +461,14 @@ input[type="submit"] {
   margin-top: 5%;
 }
 
+input {
+  background-color: transparent;
+  color: #111111;
+  border: 2px solid #5c5c5c;
+  border-radius: 8px;
+  padding-left: 2px;
+}
+
 /*---End of Booking form styling-->
 /*--------------------- Start of footer */
 footer {
