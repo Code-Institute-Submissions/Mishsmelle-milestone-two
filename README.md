@@ -35,6 +35,7 @@ The colour scheme was intentionally kept minialist here. I used a light green co
 ## Typography
 
 The font used is Bodoni, sourced from Google fonts. Bodoni is a serif font, which conveys a more traditional, classical tone. the letters contain a lot of space in keeping with the look if the website, space is often used in travel sites as it encourages curiosity and wanderlust. 
+
 ## Imagery
 All the images on the site were sourced from pexels.com. all images are high quality and chosen for their colourful depictions of vineyards.
 
@@ -83,33 +84,55 @@ The index.html is showing 20 errors. Everyone if these is realting to the Vue.JS
 
 ### First Time Visitor Goals
 * As a First Time Visitor, I want to find out more about Pinot Gogo. 
+
+**The site includes an About Us page where first time visitors can learn more about hte company, there is also links to their social media pages and contact info.**
+
 * As a First Time Visitor, I want to find a wine that would suit me. 
-* As a First Time Visitor, I want to see what wine tours are available.
+
+**The site includes a fun interactive quiz to help win newbies fine one that suites.**
+
+* I want the site to be easy to find on Google
+
+**meta description was added to the head to improve SEO** 
 
 ### Returning Visitor Goals
-* As a Returning Visitor, I want to find contact information to enquire about by my wine tour. 
+* As a Returning Visitor, I want to request more info about booking my wine tour. 
+
+**Clicking on any link to book brings the user to a registration form to request a brochure and be contacted by a member of the team**
+
 * As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-* As a Returning Visitor, I want to see what wine tours are available..
+
+**The built-in contact page is highly visible in the footer that shows on every page. The user can also find the company email address and phone number here too.**
+
+* As a Returning Visitor, I want to see what wine tours are available.
+
+**The site includes a page called Explore Wine Tours that details packages available for each region, and a map to help users tailor their wone tour to their own needs.**
 
 ### Frequent User Goals
-* As a Frequent User, I want to read the blog to see if there are any new wine recommendations. 
 * As a Frequent User, I want to find Pinot Gogo’s social media pages to follow. 
-* As a Frequent User, I want to find contact information to enquire about by my wine tour. 
+
+**Social links can be found in the footer on each page**
+
+* As a Frequent User, I want to see what else is available in the region after I have booked my tour. 
+
+**Users can view the google map with places to navigate through the region and familiarise themselves.**
+
 Further Testing
 
 * The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 * The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
-* A large amount of testing was done to ensure that all pages were linking correctly.
 * Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ## Known Bugs
- 
- 
+
+* The site is not as responsive as I would like, alignments are off when moveing from desktop to mobile. This is an issue I had in my previous project also and while I feel on this site I have made improvements it is still an area I need to work on. 
+* The title on the registration form should toggle depending on the region chosen. It worked previously but while working on the site leading up to deadline it stopped and I was unable to resolve this. 
+  
 # Deployment
 
 ### GitHub Pages
 The project was deployed to GitHub Pages using the following steps...
-* Log in to GitHub and locate the [GitHub Repository]()
+* Log in to GitHub and locate the [GitHub Repository](https://github.com/Mishsmelle/milestone-two)
 * At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 --Alternatively Click Here for a GIF demonstrating the process starting from Step 2.
 * Scroll down the Settings page until you locate the "GitHub Pages" Section.
@@ -119,12 +142,12 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Forking the GitHub Repository
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
-* Log in to GitHub and locate the [GitHub Repository]()
+* Log in to GitHub and locate the [GitHub Repository](https://github.com/Mishsmelle/milestone-two)
 * At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 * You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
-* Log in to GitHub and locate the [GitHub Repository]()
+* Log in to GitHub and locate the [GitHub Repository](https://github.com/Mishsmelle/milestone-two)
 * Under the repository name, click "Clone or download".
 * To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 * Open Git Bash
@@ -133,7 +156,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 $ git clone https://github.com/mishsmelle/pinot-gogo
 
 * Press Enter. Your local clone will be created.
-$ git clone https://github.com/mishsmelle/pinot-gogo
+$ git clone https://github.com/mishsmelle/milestone-two
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
