@@ -112,19 +112,19 @@
                       <li v-for="response in question.responses">
                         <label>
                           <input type="radio" v-bind:value="response.value" v-bind:name="index"
-                            v-model="userResponses[index]"> {{response.text}}
+                            v-model="userResponses[index]" v-on:click="next"> {{response.text}}
                         </label>
                       </li>
 
                     </ul>
                     <!-- The two navigation buttons -->
-                    <!-- Note: prev is hidden on first question -->
+                    <!-- Note: prev is hidden on first question-->
                     <button class="secondary button" v-if="questionIndex > 0" v-on:click="prev">
                       prev
                     </button>
-                    <button class="success button" v-on:click="next">
+                    <!--<button class="success button" v-on:click="next">
                       next
-                    </button>
+                    </button>-->
                   </div>
                 </div>
               </div>
