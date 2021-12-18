@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background: #d1f0c9;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,17 +28,17 @@ body {
   text-align: center;
   height: 100%;
   font-size: 20px;
-  font-family: 'Bodoni Moda', serif !important;
+  font-family: 'Cinzel', serif;
 }
 #header-style {
-  
+  background: #d1f0c9;
   padding: 30px 0px;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Bodoni Moda', serif !important;
+  font-family: 'Cinzel', serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -57,6 +57,10 @@ h3 {
 
   /*Nav bar styling*/
 
+}
+
+##quiz-box {
+  background-color: #d1f0c9;
 }
 
 #menu li {
@@ -212,7 +216,7 @@ h3 {
   margin: 5rem auto;
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: #3e1719;
   min-height: 100vh;
 }
 
@@ -222,7 +226,7 @@ h3 {
   margin-top: 30%;
   margin-bottom: 3rem;
   color: #000000;
-  font-family: 'Great Vibes', cursive !important;
+  font-family: 'Cinzel', serif;
   font-weight: 400;
   font-size: 3.5rem;
 }
@@ -236,7 +240,7 @@ h3 {
   min-height: 50vh;
   text-align: center;
   margin-right: 20%;
-  background: #fff;
+  background: #d1f0c9;
 }
 
 #app>.row {
@@ -499,61 +503,44 @@ input[type="submit"] {
 /*---End of Booking form styling-->
 
 /*--------------------- Start of footer */
-footer {
-  clear: both;
+footer{
   background-color: #d1f0c9;
-  padding: 70px 0px;
+  padding:70px 0px;
+}	       
+
+footer ul li{
+ padding:5px 0px;
 }
 
-footer ul li {
-  padding: 5px 0px;
+.adress span , .contact span , .social span{
+color: #FFF; 
+font-weight: 800; 
+padding-bottom: 10px; 
+margin-bottom: 20px;
+display: block;
+text-transform: uppercase;
+font-size: 20px;
+letter-spacing: 3px;
 }
 
-footer a {
-  color: #000;
-  text-decoration: none;
-  background-color: transparent;
+.adress li p , .contact li a , .social li a{
+ color:#FFF;
+ letter-spacing: 2px;
+ text-decoration:none;
+ font-size:15px;
 }
 
-.address span,
-.contact span,
-.social span {
-  color: #000;
-  font-weight: 800;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  display: block;
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 3px;
+.social li{
+ float:left;
 }
 
-.address li p,
-.contact li a,
-.social li a {
-  color: #000;
-  letter-spacing: 2px;
-  text-decoration: none;
-  font-size: 15px;
+.adress , .contact , .social {
+ list-style: none;
 }
 
-.social li {
-  float: left;
-}
-
-.address,
-.contact,
-.social {
-  list-style: none;
-}
-
-.fa {
-  color: #000;
-  margin-right: 25px;
-  font-size: 14px;
-}
-
-.newsletter {
-  margin-left: 40px;
+.fa{
+ color:#9c9c9c;
+ margin-right: 15px;
+ font-size:14px;
 }
 /*--------------------- End of footer */
