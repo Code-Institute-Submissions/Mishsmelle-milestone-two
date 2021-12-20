@@ -393,12 +393,13 @@ label {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .field * {
     font-size: x-small;
     min-width: 200px;
   }
 }
+
 
 #form input[type="text"],
 #form input[type="email"],
@@ -442,6 +443,12 @@ input[type="submit"] {
 
 .contact-button {
   padding-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .container * {
+    max-width: 100%;
+  }
 }
 
 /*----End of Contact Us styling--*/
