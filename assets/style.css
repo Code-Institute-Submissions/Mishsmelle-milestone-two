@@ -357,7 +357,9 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: fit-content;
 }
+
 #form input {
   padding-top: 10px;
   padding-bottom: 10px;
