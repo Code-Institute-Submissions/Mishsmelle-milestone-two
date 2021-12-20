@@ -80,11 +80,31 @@ W3C Markup Validator:
 W3C CSS Validator: 
 * [CSS Results](/assets/docs/CSS-Validator.png)
 
-The index.html is showing 13 errors relating to the Vue.JS app. There are no errors except those relating to the Vue.js framework. As HTML validators expect pure HTML these frameworks are expected to show as errors here. Further research, [example](https://livebook.manning.com/book/testing-vue-js-applications/chapter-13/5), confirmed this. 
+The index.html is showing 13 errors relating to the Vue.JS app. 
 
 ![](/assets/docs/images/validator filtering.png)
 
-I also did some research into possible ways to remove these errors and warnings from the HTML validator. I researched different suggestions I found online, for example, [this Stackflow article on W3C Validation and Vue's HTML binding syntax](https://stackoverflow.com/questions/39498365/w3c-validation-and-vues-html-binding-syntax) referenced a [github issue](https://github.com/vuejs/vue/issues/273) which suggested a vue comfig prefix. I then found a subsequent github entitled [Why was "Vue.config.prefix" removed?](https://github.com/vuejs/vue/issues/2415) noting this option was no longer available. 
+**What are the errors?** 
+
+The only errors are those relating to the Vue.js framework. Including: 
+
+* v-cloak
+* v-show
+* v-for
+* v-bind
+* v-model
+* v-on
+* v-if
+
+Each error stating that the vue framework element (indicated by the **v-**) is not allowed on the respective HTML element, (div, input, button and li)
+
+**What is the cause of the errors?**
+As HTML validators expect pure HTML these frameworks are expected to show as errors here. Further research, [example](https://livebook.manning.com/book/testing-vue-js-applications/chapter-13/5), confirmed this. Here it explains that without the use of Server Side rendoring HTML validators are unable to interpret VUE.js code. 
+
+**Why I chose to keep the framework in the project despite the errors** 
+* First, I did some research into possible ways to remove these errors and warnings from the HTML validator. I researched different suggestions I found online, for example, [this Stackflow article on W3C Validation and Vue's HTML binding syntax](https://stackoverflow.com/questions/39498365/w3c-validation-and-vues-html-binding-syntax) referenced a [github issue](https://github.com/vuejs/vue/issues/273) which suggested a vue comfig prefix. I then found a subsequent github entitled [Why was "Vue.config.prefix" removed?](https://github.com/vuejs/vue/issues/2415) noting this option was no longer available. 
+* Second, I considered using a different framework for the site but utimately feel that the vue.js is the best suited for this project. I learned a lot from including it and it allows me to include a quiz that functions exactly how I wanted it to. 
+* Third, as this is a resubmission I sought additional guidance from tutors, my mentor and peers on this and from these discussions decided to proceed with the project and include futher insights into the errors here in the README. 
 
 ## Testing User Stories from User Experience (UX) Section
 
