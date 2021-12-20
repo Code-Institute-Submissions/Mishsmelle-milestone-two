@@ -105,6 +105,7 @@ As HTML validators expect pure HTML these frameworks are expected to show as err
 * First, I did some research into possible ways to remove these errors and warnings from the HTML validator. I researched different suggestions I found online, for example, [this Stackflow article on W3C Validation and Vue's HTML binding syntax](https://stackoverflow.com/questions/39498365/w3c-validation-and-vues-html-binding-syntax) referenced a [github issue](https://github.com/vuejs/vue/issues/273) which suggested a vue comfig prefix. I then found a subsequent github entitled [Why was "Vue.config.prefix" removed?](https://github.com/vuejs/vue/issues/2415) noting this option was no longer available. 
 * Second, I considered using a different framework for the site but utimately feel that the vue.js is the best suited for this project. I learned a lot from including it and it allows me to include a quiz that functions exactly how I wanted it to. 
 * Third, as this is a resubmission I sought additional guidance from tutors, my mentor and peers on this and from these discussions decided to proceed with the project and include futher insights into the errors here in the README. 
+* Lastly, as the "errors" are not errors as such and are only flagged here as they are an unexpected language used by the HTML validator, then there are no "errors" on the site. The site is functioning completely as expected. 
 
 ## Testing User Stories from User Experience (UX) Section
 
