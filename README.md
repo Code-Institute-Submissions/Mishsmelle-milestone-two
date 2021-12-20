@@ -78,7 +78,16 @@ W3C Markup Validator - [Index.html Results](/assets/docs/index-html-validator.pn
                      - [Booking-form.html Results](/assets/docs/booking-form-validator.png)
 W3C CSS Validator - [CSS Results](/assets/docs/CSS-Validator.png)
 
-The index.html is showing 20 errors. Everyone if these is realting to the Vue.JS app. I consulted my peers in slack (https://code-institute-room.slack.com/archives/CJK889NSX/p1623058737012400) and researched the errors online (https://livebook.manning.com/book/testing-vue-js-applications/chapter-13/58) both confirmed these errors are expected behaviour in a html validator. 
+The index.html is showing 13 errors relating to the Vue.JS app. If we isolate these errors there are no other HTML validator errors. 
+
+![](/assets/images/validator filtering.png)
+
+To remove these errors and warnings, I researched different suggestions I found online, for example, [this Stackflow article on W3C Validation and Vue's HTML binding syntax](https://stackoverflow.com/questions/39498365/w3c-validation-and-vues-html-binding-syntax) referenced a [github issue](https://github.com/vuejs/vue/issues/273) which suggested a vue comfig prefix. I then found a subsequent github entitled [Why was "Vue.config.prefix" removed?](https://github.com/vuejs/vue/issues/2415) noting this option was no longer available. 
+
+Further research, [example](https://livebook.manning.com/book/testing-vue-js-applications/chapter-13/5), confirmed 
+
+
+
 
 ## Testing User Stories from User Experience (UX) Section
 
@@ -123,10 +132,10 @@ Further Testing
 * The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 * Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-## Known Bugs
+## Known Bugs/issues
 
 * The site is not as responsive as I would like, alignments are off when moving from desktop to mobile. This is an issue I had in my previous project also and while I feel on this site I have made improvements it is still an area I need to work on. 
-* The title on the registration form should toggle depending on the region chosen. It worked previously but while working on the site leading up to deadline it stopped and I was unable to resolve this. 
+* The title on the registration form should toggle depending on the region chosen. It worked previously but while working on the site leading up to deadline it stopped and I was unable to resolve this. I had to remove this feature for this iteration of the website so it functions as expected. 
   
 # Deployment
 
