@@ -71,12 +71,12 @@ Quiz Wireframe - [View]("assets/images/Quiz-desktop-wireframe.png")
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-W3C Markup Validator - [Index.html Results]("/assets/docs/index-html-validator.png")
-                     - [About-us.html Results]("/assets/docs/about-us-validator.png")
-                     - [Contact-us.html Results]("/assets/docs/contact-us-validator.png")
-                     - [Explore-wine-tours.html Results]("/assets/docs/explore-wine-tours-validator.png")
-                     - [Booking-form.html Results]("/assets/docs/booking-form-validator.png")
-W3C CSS Validator - [CSS Results]("/assets/docs/CSS-Validator.png")
+W3C Markup Validator - [Index.html Results](/assets/docs/index-html-validator.png)
+                     - [About-us.html Results](/assets/docs/about-us-validator.png)
+                     - [Contact-us.html Results](/assets/docs/contact-us-validator.png)
+                     - [Explore-wine-tours.html Results](/assets/docs/explore-wine-tours-validator.png)
+                     - [Booking-form.html Results](/assets/docs/booking-form-validator.png)
+W3C CSS Validator - [CSS Results](/assets/docs/CSS-Validator.png)
 
 The index.html is showing 20 errors. Everyone if these is realting to the Vue.JS app. I consulted my peers in slack (https://code-institute-room.slack.com/archives/CJK889NSX/p1623058737012400) and researched the errors online (https://livebook.manning.com/book/testing-vue-js-applications/chapter-13/58) both confirmed these errors are expected behaviour in a html validator. 
 
@@ -125,7 +125,7 @@ Further Testing
 
 ## Known Bugs
 
-* The site is not as responsive as I would like, alignments are off when moveing from desktop to mobile. This is an issue I had in my previous project also and while I feel on this site I have made improvements it is still an area I need to work on. 
+* The site is not as responsive as I would like, alignments are off when moving from desktop to mobile. This is an issue I had in my previous project also and while I feel on this site I have made improvements it is still an area I need to work on. 
 * The title on the registration form should toggle depending on the region chosen. It worked previously but while working on the site leading up to deadline it stopped and I was unable to resolve this. 
   
 # Deployment
