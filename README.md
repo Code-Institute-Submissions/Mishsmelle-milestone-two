@@ -71,23 +71,20 @@ Quiz Wireframe - [View]("assets/images/Quiz-desktop-wireframe.png")
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-W3C Markup Validator - [Index.html Results](/assets/docs/index-html-validator.png)
-                     - [About-us.html Results](/assets/docs/about-us-validator.png)
-                     - [Contact-us.html Results](/assets/docs/contact-us-validator.png)
-                     - [Explore-wine-tours.html Results](/assets/docs/explore-wine-tours-validator.png)
-                     - [Booking-form.html Results](/assets/docs/booking-form-validator.png)
-W3C CSS Validator - [CSS Results](/assets/docs/CSS-Validator.png)
+W3C Markup Validator: 
+* [Index.html Results](/assets/docs/index-html-validator.png)
+* [About-us.html Results](/assets/docs/about-us-validator.png)
+* [Contact-us.html Results](/assets/docs/contact-us-validator.png)
+* [Explore-wine-tours.html Results](/assets/docs/explore-wine-tours-validator.png)
+* [Booking-form.html Results](/assets/docs/booking-form-validator.png)
+W3C CSS Validator: 
+* [CSS Results](/assets/docs/CSS-Validator.png)
 
-The index.html is showing 13 errors relating to the Vue.JS app. If we isolate these errors there are no other HTML validator errors. 
+The index.html is showing 13 errors relating to the Vue.JS app. There are no errors except those relating to the Vue.js framework. As HTML validators expect pure HTML these frameworks are expected to show as errors here. Further research, [example](https://livebook.manning.com/book/testing-vue-js-applications/chapter-13/5), confirmed this. 
 
-![](/assets/images/validator filtering.png)
+![](/assets/docs/images/validator filtering.png)
 
-To remove these errors and warnings, I researched different suggestions I found online, for example, [this Stackflow article on W3C Validation and Vue's HTML binding syntax](https://stackoverflow.com/questions/39498365/w3c-validation-and-vues-html-binding-syntax) referenced a [github issue](https://github.com/vuejs/vue/issues/273) which suggested a vue comfig prefix. I then found a subsequent github entitled [Why was "Vue.config.prefix" removed?](https://github.com/vuejs/vue/issues/2415) noting this option was no longer available. 
-
-Further research, [example](https://livebook.manning.com/book/testing-vue-js-applications/chapter-13/5), confirmed 
-
-
-
+I also did some research into possible ways to remove these errors and warnings from the HTML validator. I researched different suggestions I found online, for example, [this Stackflow article on W3C Validation and Vue's HTML binding syntax](https://stackoverflow.com/questions/39498365/w3c-validation-and-vues-html-binding-syntax) referenced a [github issue](https://github.com/vuejs/vue/issues/273) which suggested a vue comfig prefix. I then found a subsequent github entitled [Why was "Vue.config.prefix" removed?](https://github.com/vuejs/vue/issues/2415) noting this option was no longer available. 
 
 ## Testing User Stories from User Experience (UX) Section
 
