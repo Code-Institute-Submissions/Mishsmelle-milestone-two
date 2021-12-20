@@ -239,13 +239,11 @@ h3 {
 #app {
   min-height: 50vh;
   text-align: center;
-  margin-right: 20%;
   background: #d1f0c9;
 }
 
 #app>.row {
   background: #d1f0c9;
-  margin-left: 25%;
   margin-bottom: 5%;
   padding: 8px;
 }

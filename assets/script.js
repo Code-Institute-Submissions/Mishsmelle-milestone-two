@@ -129,7 +129,7 @@ window.onload = function () {
             }
         }
     });
-}
+};
 
 function changeCenter(center) {
     map.setCenter(center);
