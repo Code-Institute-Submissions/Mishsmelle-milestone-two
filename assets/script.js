@@ -1,5 +1,5 @@
 "use strict";
-<![CDATA[
+
 window.onload = function () {
 
     var quiz = {
@@ -135,4 +135,3 @@ function changeCenter(center) {
     map.setCenter(center);
     marker.setPosition(center);
 }
-]]>
