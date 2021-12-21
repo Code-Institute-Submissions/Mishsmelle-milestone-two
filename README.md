@@ -1,6 +1,6 @@
 # Pinot Gogo Website
 
-![alt text](https://screenshot.click/07-23-kpy5n-lu09u.png)
+![alt text](/assets/docs/am-i-responsive-img.png)
 
 [View the live project here.](https://mishsmelle.github.io/milestone-two/)
 
@@ -82,7 +82,7 @@ W3C CSS Validator:
 
 The index.html is showing 13 errors relating to the Vue.JS app. 
 
-![image](./assets/docs/images/validator_filtering.png)
+![image](/assets/docs/validator_filtering.png)
 
 **What are the errors?** 
 
@@ -106,6 +106,11 @@ As HTML validators expect pure HTML these frameworks are expected to show as err
 * Second, I considered using a different framework for the site but utimately feel that the vue.js is the best suited for this project. I learned a lot from including it and it allows me to include a quiz that functions exactly how I wanted it to. 
 * Third, as this is a resubmission I sought additional guidance from tutors, my mentor and peers on this and from these discussions decided to proceed with the project and include futher insights into the errors here in the README. 
 * Lastly, as the "errors" are not errors as such and are only flagged here as they are an unexpected language used by the HTML validator, then there are no "errors" on the site. The site is functioning completely as expected. 
+
+I used the Lighthouse feature of Chrome Dev tools to test the site and each page passed: 
+
+[Lighthouse Desktop Report](/assets/docs/pinot-gogo-lighthouse.pdf)
+
 
 ## Testing User Stories from User Experience (UX) Section
 
@@ -152,8 +157,7 @@ Further Testing
 
 ## Known Bugs/issues
 
-* The site is not as responsive as I would like, alignments are off when moving from desktop to mobile. This is an issue I had in my previous project also and while I feel on this site I have made improvements it is still an area I need to work on. 
-* The title on the registration form should toggle depending on the region chosen. It worked previously but while working on the site leading up to deadline it stopped and I was unable to resolve this. I had to remove this feature for this iteration of the website so it functions as expected. 
+* I had to remove a feauture where the title on the registration form should toggle depending on the region chosen as it was too buggy as not working as it should. 
   
 # Deployment
 
