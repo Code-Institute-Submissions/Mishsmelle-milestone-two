@@ -82,7 +82,7 @@ W3C CSS Validator:
 
 The index.html is showing 13 errors relating to the Vue.JS app. 
 
-![](/assets/docs/images/validator filtering.png)
+![image](/assets/docs/images/validator_filtering.png)
 
 **What are the errors?** 
 
